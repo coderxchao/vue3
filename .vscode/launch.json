@@ -5,15 +5,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "node",
+      "name": "reactive",
       "request": "launch",
-      "name": "Vitest - Debug Current Test File",
-      "autoAttachChildProcesses": true,
-      "skipFiles": ["<node_internals>/**", "**/node_modules/**"],
-      "program": "${workspaceRoot}/node_modules/vitest/vitest.mjs",
-      "args": ["run", "${relativeFile}"],
-      "smartStep": true,
-      "console": "integratedTerminal"
+      "type": "chrome",
+      "url": "http://127.0.0.1:3000/packages/vue/examples/demo/reactive.html",
+      "webRoot": "${workspaceFolder}"
     }
   ]
 }
